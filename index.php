@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Auth PHP & MySQL</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
 </head>
@@ -23,9 +23,8 @@
             <input type="submit" name="register" value="Crear cuenta">
         </form>
     </div>
-<!--
     <div class="form-container">
-        <form action="">
+        <form method="post">
             <h2>Iniciar sesión</h2>
             <div class="input-container">
                 <input type="text" name="name" id="name" placeholder="Nombre de Usuario" required>
@@ -36,9 +35,9 @@
             <input type="submit" name="login" value="Iniciar sesión">
         </form>
     </div>
--->
     <?php 
         include('register.php');
+        include('login.php')
     ?>
 </body>
 </html>
